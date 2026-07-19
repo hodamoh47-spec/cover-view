@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cover View - إعدادات نافذة الجراب"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1) اضغط لمنح إذن العرض فوق التطبيقات الأخرى"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnGrantOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="منح إذن Overlay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) استثناء التطبيق من توفير البطارية (مهم عشان الخدمة تفضل شغالة)"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnIgnoreBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="استثناء من توفير البطارية" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3) اضبط مكان وحجم فتحة الجراب (بالنسبة % من طول الشاشة)"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بعد الشاشة من الأعلى:"
+            android:layout_marginTop="12dp" />
+        <SeekBar
+            android:id="@+id/seekTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="60" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ارتفاع النافذة:"
+            android:layout_marginTop="8dp" />
+        <SeekBar
+            android:id="@+id/seekHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30" />
+
+        <Button
+            android:id="@+id/btnPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="معاينة (Preview) لمدة 6 ثواني" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4) شغّل الخدمة - هتشتغل أوتوماتيك لما تقفل الجراب على حساس القرب"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفعيل Cover View"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

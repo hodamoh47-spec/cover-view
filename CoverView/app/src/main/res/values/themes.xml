@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.CoverView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <style name="OverlayTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>
