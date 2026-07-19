@@ -44,9 +44,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3) اضبط مكان وحجم فتحة الجراب (بالنسبة % من طول الشاشة)"
+            android:text="3) اضبط مكان وحجم فتحة الجراب"
             android:layout_marginTop="24dp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCalibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="معايرة تلقائية بزرار الصوت" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أو اضبطها يدويًا:"
+            android:layout_marginTop="12dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,7 +93,42 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4) شغّل الخدمة - هتشتغل أوتوماتيك لما تقفل الجراب على حساس القرب"
+            android:text="4) اختار المميزات اللي عايز تشغلها (كل واحدة مستقلة)"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الساعة والتاريخ والبطارية"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الرد/الرفض على المكالمات"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchDnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="وضع عدم الإزعاج التلقائي"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التحكم بالموسيقى"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5) شغّل الخدمة - هتشتغل أوتوماتيك لما تقفل الجراب على حساس القرب"
             android:layout_marginTop="24dp"
             android:textStyle="bold" />
 
